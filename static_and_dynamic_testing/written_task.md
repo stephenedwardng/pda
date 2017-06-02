@@ -7,6 +7,7 @@
 def func1 val 
 # No brackets around val
   if val = 1
+# missing == to make comparison. Above will assign rather than compare
   return true
   else
   return false
@@ -44,7 +45,7 @@ if looper == 10
 else
   puts "looper failed"
   failures = failures + 1
-# More efficeient way would be failures += 1
+# More efficient way would be failures += 1
  
   
 if func1(3) == false
