@@ -12,4 +12,24 @@ class PracticalTask_Test < MiniTest::Test
     assert_equal(false, func1(3))
   end
 
+  def test_max__return_a()
+    a = 7
+    b = 6
+    assert_equal(a, max(a, b))
+  end
+
+  def test_max__return_b()
+    a = 5
+    b = 6
+    assert_equal(b, max(a, b))
+  end
+
+  def test_looper()
+    assert_equal(10, looper())
+  end
+
+  # def test_looper_message()
+
+  # end
+
 end
