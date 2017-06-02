@@ -39,6 +39,7 @@ failures = 0
 
  
 if looper == 10 
+# looper not given brackets if it is a function call nor assigned a starting value if it is a variable 
   puts "looper passed"
 else
   puts "looper failed"
