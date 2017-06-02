@@ -21,40 +21,41 @@ def looper()
   return i
 end
 
+failures = 0 
+
 def looper_message() 
-  failures = 0 
  
   if looper() == 10 
-    puts "looper passed"
+    return "looper passed"
   else
-    puts "looper failed"
+    return "looper failed"
     failures += 1
   end
 end
  
 def func1_message()  
   if func1(3) == false
-    puts "func1(3) passed"
+    return "func1(3) passed"
   else
-    puts "func1(3) failed"
+    return "func1(3) failed"
     failures += 1
   end 
 end 
 
 def max_message()  
   if max(100,1) == 100 
-    puts "max(100,1) passed"
+    return "max(100,1) passed"
   else
     puts "func1(3) failed"
-    failures = failures + 1
+    failures += 1
   end
 end
 
 def failures_message()  
-  if failures 
-    puts "Test Failed"
+  if failures == 0
+    return "Test Failed"
   else
-    puts "Test Passed"
+    return "Test Passed"
   end
 end
 

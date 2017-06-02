@@ -28,8 +28,20 @@ class PracticalTask_Test < MiniTest::Test
     assert_equal(10, looper())
   end
 
-  # def test_looper_message()
+  def test_looper_message()
+    assert_equal("looper passed", looper_message())
+  end
 
-  # end
+  def test_func1_message()
+    assert_equal("func1(3) passed", func1_message())
+  end
+
+  def test_max_message()
+    assert_equal("max(100,1) passed", max_message())
+  end
+
+  def test_failures_message()
+    assert_equal("Test Passed", failures_message())
+  end
 
 end

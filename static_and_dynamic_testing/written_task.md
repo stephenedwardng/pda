@@ -60,6 +60,7 @@ if max(100,1) == 100
   puts "max(100,1) passed"
 else
   puts "func1(3) failed"
+# Wrong failure message seems to have been copied
   failrues = failures + 1
 end
 # Incorrect spelling of failures
